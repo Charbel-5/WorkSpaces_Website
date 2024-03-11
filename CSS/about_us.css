@@ -1,0 +1,114 @@
+body{
+    background-color: #006799;
+    margin: 0;
+}
+
+
+/*  About the business and about the founder  */
+
+
+.heading{
+    text-align: center;
+}
+
+
+.about{
+    position: relative;
+    height: auto;
+    margin-left: 10%;
+    width: 80%;
+    font-family: calibri;
+    font-size: 1.7vw;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.founder_image{
+    width: 250px;
+    height: auto;
+}
+
+.founder_biography{
+    width: 65%;
+    font-size: 1.7vw;
+}
+
+
+.founder_info{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* Back To Top Button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+  
+.back-to-top img {
+    width: 40px;
+    height: auto;
+    z-index: 1;
+}
+
+
+/*  To make the font size bigger on a small screen  */
+
+@media (max-width: 768px) {
+    .about{
+        font-size: 15px;
+    }
+    .founder_biography{
+        font-size: 15px;
+        width: 55%;
+    }
+    .founder_info{
+        width: 90%;
+    }
+    .founder_image{
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+/* Vertical Small Screens */
+
+@media (max-height: 950px) and (max-width: 500px) {
+    .about{
+        font-size: 15px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .founder_biography{
+        font-size: 15px;
+        width: 100%;
+    }
+    .founder_info{
+        justify-content: center;
+    }
+}
+
+/* Horizontal Small Screens */
+
+@media (max-height: 500px) and (max-width: 950px) {
+    .about{
+        font-size: 15px;
+    }
+    .founder_biography{
+        font-size: 15px;
+        width: 80%;
+    }
+    .founder_info{
+        justify-content: center;
+    }
+}

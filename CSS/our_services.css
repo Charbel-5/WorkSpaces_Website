@@ -1,0 +1,207 @@
+body{
+    background-color: #004a6e;
+    margin: 0;
+}
+
+
+/* Back To Top Button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+  
+.back-to-top img {
+    width: 40px;
+    height: auto;
+    z-index: 1;
+}
+
+
+/* Our services explanations  */
+
+.explanation_div{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    left: 5%;
+    height: auto;
+}
+
+.title_heading{
+    margin-top: 8.5%;
+    text-align: center;
+    color: white;
+    font-size: 2.6vw;
+}
+
+.explanation_text_left{
+    float: left;
+    width: 450px;
+    color: white;
+    font-size: 1.1em;
+}
+
+.img_right{
+    float: right;
+    width: 470px;
+    height: auto;
+}
+
+
+/*  Book button that takes the user to the booking page  */
+
+.book{
+    width: 20%;
+    margin-top: 8%;
+    margin-left: 40%;
+    padding: 20px 20px;
+    background-color: #4fb1e5;
+    border-color: black;
+    color: black;
+    font-size: 1.8vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book a{
+    text-decoration: none;
+    color: black;
+}
+
+.book:hover{
+    transform: scale(1.1);
+}
+
+
+/*  Plans and pricings explanation and comparison table  */
+
+.table_positioning{
+    height: auto;
+    width: 100%;
+}
+
+table{
+    margin-left: 5%;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #4fb1e5;
+}
+
+td{
+    border: 1px solid black;
+    color: white;
+    padding: 1.5vw 2vw;
+    font-size: 1.5vw;
+    border-radius: 5px;
+}
+th{
+    border: 2px solid black;
+    color: white;
+    padding: 1.5vw 2vw;
+    font-size: 1.6vw;
+    border-radius: 5px;
+}
+
+td:first-child{
+    border: none;
+}
+
+
+/*  Why choose this business arguments  */
+
+.why_workspaces{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+    color: white;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+
+strong{
+    color: white;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+
+/* Vertical Small Screens */
+
+@media (max-height: 950px) and (max-width: 500px) {
+    .title_heading{
+        font-size: 20px;
+    }
+    .explanation_text_left{
+        font-size: 15px;
+    }
+    .img_right{
+        width: 90%;
+    }
+    
+    .book{
+        width: 30%;
+        margin-left: 35%;
+        font-size: 15px;
+    }
+
+    td{
+        font-size: 0.8em;
+    }
+    th{
+        font-size: 0.9em;
+    }
+    
+    .why_workspaces{
+        margin-bottom: 45px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 390px){
+    table{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Horizontal Small Screens */
+
+@media (max-height: 500px) and (max-width: 950px) {
+    .title_heading{
+        font-size: 25px;
+    }
+    .explanation_text_left{
+        font-size: 17px;
+        width: 80%;
+    }
+    .img_right{
+        width: 80%;
+    }
+    
+    .book{
+        width: 30%;
+        margin-left: 35%;
+        font-size: 17px;
+    }
+
+    td{
+        font-size: 17px;
+    }
+    th{
+        font-size: 20px;
+    }
+    
+    .why_workspaces{
+        margin-bottom: 45px;
+        font-size: 17px;
+    }
+}

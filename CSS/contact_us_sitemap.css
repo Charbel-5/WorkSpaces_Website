@@ -1,0 +1,94 @@
+/*  Sitemap that contains a contact us section used throughout this project  */
+
+.sitemap{
+    background-color: #4fb1e5;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-style: solid;
+    border-top-color: black;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sitemap_element{
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    font-size: 15px;
+}
+.sitemap_element a{
+    text-decoration: none;
+    color: black;
+}
+
+.sitemap_element:hover{
+    transform: scale(1.1);
+}
+
+.sitemap_title{
+    font-size: 19px;
+}
+
+.sitemap_div_1{
+    width: 200px;
+}
+
+.sitemap_div_2{
+    width: 200px;
+}
+
+.sitemap_div_3{
+    width: 240px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+
+.text_input{
+    background-color: #4fb1e5;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 15.5px !important;
+}
+
+.text_input::placeholder{
+    color: black;
+}
+
+
+.textarea_style {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4fb1e5;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.textarea_style::placeholder{
+    color:black;
+    font-size: 15px;
+}
+
+
+.submit_input{
+    background-color: #4fb1e5;
+    height: 22px;
+    color: black;
+    border-color: black;
+}
+
+.submit_input::placeholder{
+    color:black;
+}

@@ -1,0 +1,91 @@
+/*  Sitemap that contains a newsletter section used throughout this project  */
+
+.sitemap{
+    background-color: #4fb1e5;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-style: solid;
+    border-top-color: black;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sitemap_element{
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    font-size: 15px;
+}
+.sitemap_element a{
+    text-decoration: none;
+    color: black;
+}
+
+.sitemap_element:hover{
+    transform: scale(1.1);
+}
+
+.sitemap_div_1{
+    width: 200px;
+}
+
+.sitemap_div_2{
+    width: 200px;
+    
+}
+
+.sitemap_div_3{
+    width: 180px;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px 40px;
+}
+
+.newsletter_title{
+    font-size: 19px;
+}
+
+.newsletter_text{
+    font-size: 15px;
+}
+
+input[type="text"] {
+    background-color: #4fb1e5;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    border-radius: 5px;
+    width: 160px;
+}
+
+input[type="submit"] {
+    background-color: #4fb1e5;
+    height: 22px;
+    color: black;
+    border-color: black;
+}
+
+input::placeholder{
+    color:black;
+}
+
+
+@media (max-width: 768px) {
+    input::placeholder{
+        font-size: 15px;
+    }
+    input[type="submit"] {
+        font-size: 15px;
+        width: 100px;
+        padding: 0;
+    }
+    input[type="text"] {
+        width: 160px;
+        font-size: 15px;
+    }
+} 

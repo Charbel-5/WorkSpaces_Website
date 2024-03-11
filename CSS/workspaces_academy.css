@@ -1,0 +1,132 @@
+body{
+    background-color: #004a6e;
+    margin: 0;
+    font-size: 17px;
+}
+
+
+/* Back To Top Button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+  
+.back-to-top img {
+    width: 40px;
+    height: auto;
+    z-index: 1;
+}
+
+
+/*  Academy explanation and current courses offered  */
+
+.title_heading{
+    margin-top: 4%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.academy_explanation{
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+}
+
+
+/*  Courses offered  */
+
+.page_center_div{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course_div{
+    width: 450px;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.course_price{
+    text-align: center;
+}
+
+.disclaimer{
+    text-align: center;
+    color: #666666;
+}
+
+
+/*  Enroll button  */
+
+.enroll_button{
+    height: 120px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.enroll{
+    width: 18%;
+    margin-top: 50px;
+    margin-left: 41%;
+    padding: 20px 20px;
+    background-color: #4fb1e5;
+    font-size: 1.8vw;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+    border-color: black;
+}
+
+.enroll a{
+    text-decoration: none;
+    color: black;
+}
+
+.enroll:hover{
+    transform: scale(1.1);
+}
+
+
+/*  Adjustments for small screens  */
+
+/* Vertical Small Screens */
+
+@media (max-height: 950px) and (max-width: 500px) {
+    body{
+        font-size: 15px;
+    }
+    .course_div{
+        width: 90%;
+    }
+    .enroll{
+        width: 30%;
+        margin-left: 35%;
+        font-size: 16px;
+    }
+}
+
+/* Vertical Small Screens */
+
+@media (max-height: 950px) and (max-width: 500px) {
+    body{
+        font-size: 15px;
+    }
+    .course_div{
+        width: 90%;
+    }
+    .enroll{
+        width: 30%;
+        margin-left: 35%;
+        font-size: 16px;
+    }
+}
