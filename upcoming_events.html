@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content = "WorkSpaces, Workspaces Events, WorkSpaces News,  
+      Offices, Coworking Spaces, Meeting Rooms, Community for Professionals">
+      <meta name="description" content = "WorkSpaces' News and Upcoming Events">
+      <title>WorkSpaces' News</title>
+      <link rel="stylesheet" type="text/css" href="CSS/upcoming_events.css">
+      <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+      <link rel="stylesheet" type="text/css" href="CSS/newsletter_sitemap.css">
+  </head>
+  <body>
+
+    <!--  Navigation Bar  -->
+
+    <header>
+      <nav class="navbar">
+          <div class="navdiv">
+              <div><a href="index.html"><img class="logo" src="Media/logo.png" alt="Business Logo"></a></div>
+              <ul>
+                  <li class="navbar_element"><a href="index.html">Home</a></li>
+                  <li class="navbar_element"><a href="our_services.html">Our Services</a></li>
+                  <li class="navbar_element"><a href="workspaces_academy.html">WorkSpaces Academy</a></li>
+                  <li class="navbar_element"><a href="book.html">Book</a></li>
+                  <li class="navbar_element"><a href="about_us.html">About Us</a></li>
+                  <li class="navbar_element"><a href="sign_in.html">Sign In</a></li>
+                  <li class="dropdown">
+                      <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">&#9776;</a>
+                      <div class="dropdown-content">
+                          <a class="navbar_element" href="index.html">Home</a>
+                          <a class="navbar_element" href="our_services.html">Our Services</a>
+                          <a class="navbar_element" href="workspaces_academy.html">WorkSpaces Academy</a>
+                          <a class="navbar_element" href="book.html">Book</a>
+                          <a class="navbar_element" href="about_us.html">About Us</a>
+                          <a class="navbar_element" href="sign_in.html">Sign In</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    
+
+
+    <!--  Back To Top Button  -->
+
+    <div class="back-to-top" id="backToTop">
+      <img src="Media/arrow.png" alt="Back to Top">
+    </div>
+
+
+    <!--  News and Upcoming events box  -->
+
+    <div class="box">
+        <div class="news_div">
+            <h1 class="heading">Monthly Networking Event</h1>
+            <button class="expand_button adjust" onclick="expandContent(this)">Expand</button>
+            <p class="paragraph">Our monthly networking event will take place on the 24th of next month. Be Many!<br></p>
+            <p class="paragraph">
+                Community member are invited to an exclusive networking opportunity where industry leaders converge to share insights, forge new partnerships, and expand their professional circles.
+                Join us for an evening of meaningful connections and collaboration at WorkSpaces — where professionals come together to inspire, innovate, and network. Don't miss out!
+            </p>
+        </div>
+        <div class="news_div">
+            <h1 class="heading">Soft Skills Course: Fourth Cohort Launches Next Month!</h1>
+            <button class="expand_button" onclick="expandContent(this)">Expand</button>
+            <br><br>
+            <p class="paragraph">The fourth cohort of our successful soft skills course will launch on the first of next month.</p>
+            <p class="paragraph">
+                Embark on a transformative journey as we unveil our fourth cohort of the successful soft skills course, 
+                launching on the first of next month. Elevate your professional and personal growth with our proven curriculum.
+            </p>
+        </div>
+        <div class="news_div">
+            <h1 class="heading">Course Rates Slashed: $200 Pros, $100 Members!</h1>
+            <button class="expand_button" onclick="expandContent(this)">Expand</button>
+            <br><br>
+            <p class="paragraph">Our course prices have been officially lowered to 200$ for professionals and 100$ for our members!</p>
+            <p class="paragraph">
+                Dive into learning with our courses now more affordable than ever! Enjoy exclusive rates of $200 
+                for professionals and $100 for our valued members. Your pathway to knowledge just got more accessible!</p>
+        </div>
+    </div>
+
+
+    <!--  Sitemap  -->
+
+    <footer class="sitemap">
+      <div class="sitemap_div_1">
+        <ul>
+          <li class="sitemap_element"><h3>Navigate</h3></li><br>
+          <li class="sitemap_element"><a href="index.html">Home</a></li><br>
+          <li class="sitemap_element"><a href="sign_in.html">Sign In</a></li><br>
+          <li class="sitemap_element"><a href="book.html">Book a Service</a></li><br>
+          <li class="sitemap_element"><a href="workspaces_academy.html">WorkSpaces Academy</a></li><br>
+        </ul>
+      </div>
+
+      <div class="sitemap_div_2">
+        <ul>
+          <li class="sitemap_element"><h3>Get to Know Us</h3></li><br>
+          <li class="sitemap_element"><a href="about_us.html">About Us</a></li><br>
+          <li class="sitemap_element"><a href="our_services.html">Our Services</a></li><br>
+          <li class="sitemap_element"><a href="our_partners.html">Our Partners</a></li><br>
+          <li class="sitemap_element"><a href="upcoming_events.html">News/Upcoming Events</a></li><br>
+        </ul>
+      </div>
+
+      <div class="sitemap_div_3">
+        <form>
+          <label><span class="newsletter_title"><b>Stay Connected</b></span></label><br>
+          <p class="newsletter_text">Stay Informed! Join our Newletter for news, special offers and upcoming events! </p>
+          <input type="text" name="newsletter" placeholder="Email" required>
+          <input type="submit" name="subscribe" value="Subscribe">
+        </form>
+      </div>
+      
+    </footer>
+
+
+    <!--  Scripts  -->
+
+    <script type="text/javascript" src="JavaScript/navbar.js"></script>
+    <script type="text/javascript" src="JavaScript/back_to_top.js"></script>
+    <script type="text/javascript" src="JavaScript/upcoming_events.js"></script>
+      
+  </body>
+</html>

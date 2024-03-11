@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content = "WorkSpaces, Book Workspace, Book Meeting Room, Book an Office,  
+        Offices, Coworking Spaces, Meeting Rooms, Community for Professionals">
+        <meta name="description" content = "Book a service at WorkSpaces">
+        <title>Booking at WorkSpaces</title>
+        <link rel="stylesheet" type="text/css" href="CSS/book.css">
+        <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+        <link rel="stylesheet" type="text/css" href="CSS/contact_us_sitemap.css">
+    </head>
+    <body>
+
+        <!--  Navigation Bar  -->
+
+        <header>
+            <nav class="navbar">
+                <div class="navdiv">
+                    <div><a href="index.html"><img class="logo" src="Media/logo.png" alt="Business Logo"></a></div>
+                    <ul>
+                        <li class="navbar_element"><a href="index.html">Home</a></li>
+                        <li class="navbar_element"><a href="our_services.html">Our Services</a></li>
+                        <li class="navbar_element"><a href="workspaces_academy.html">WorkSpaces Academy</a></li>
+                        <li class="navbar_element"><a href="book.html">Book</a></li>
+                        <li class="navbar_element"><a href="about_us.html">About Us</a></li>
+                        <li class="navbar_element"><a href="sign_in.html">Sign In</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">&#9776;</a>
+                            <div class="dropdown-content">
+                                <a class="navbar_element" href="index.html">Home</a>
+                                <a class="navbar_element" href="our_services.html">Our Services</a>
+                                <a class="navbar_element" href="workspaces_academy.html">WorkSpaces Academy</a>
+                                <a class="navbar_element" href="book.html">Book</a>
+                                <a class="navbar_element" href="about_us.html">About Us</a>
+                                <a class="navbar_element" href="sign_in.html">Sign In</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <!--  Back To Top Button  -->
+        <div class="back-to-top" id="backToTop">
+            <img src="Media/arrow.png" alt="Back to Top">
+        </div>
+
+
+        <!--  Booking Form  -->
+
+        <div class="align_div">
+          <div class="booking_div">
+            <h1>Book a Service:</h1> <br>
+            <form>
+                <label>First Name:</label>
+                <br>
+                <input type="text" name="fname" id="fname" autofocus required>
+                <br><br>
+                <label>Last Name:</label>
+                <br>
+                <input type="text" name="lname" id="lname" required>
+                <br><br>
+                <label>Phone Number:</label>
+                <br>
+                <input type="tel" name="telnum" id="telnum" required>
+                <br><br>
+                <label>Email:</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <label>Company Name:</label>
+                <br>
+                <input type="text" name="companyname" id="companyname" required>
+                <br><br>
+                <label>Address:</label>
+                <br>
+                <input type="text" name="address" id="address" required>
+                <br><br>
+                <label>What service are you interested in?</label>
+                    <br><br>
+                    <select id="WantedService" name="service" required>
+                        <option>Workspace</option>
+                        <option>Meeting Room</option>
+                        <option>Office</option>
+                    </select>
+                <p>Would you be interested in our catering services?</p>
+                <label for="catering_yes">Yes</label>
+                <input id="YesCatering" type="radio" name="catering?">
+                <label for="caterin_no">No</label>
+                <input id="NoCatering" type="radio" name="catering?">
+                <p class="disclaimer">*Please refer to our "Our Services" page for details and pricing</p>
+                <h3>Reservation Dates:</h3>
+                <label>From:</label> <br>
+                <input id="ResDateFrom" type="date" name="registration_from" required>
+                <br><br>
+                <label>Till:</label><br>
+                <input id="ResDateTill" type="date" name="registration_till" required>
+                <br><br><br>
+                <hr>
+                <br>
+                <label>Your Quote is: </label><br>
+                <textarea readonly id="QuoteOutputField" cols="30" rows="4"></textarea><br><br>
+                <button type="button" class="quote_button" onclick="calculateQuote()">Calculate My Quote</button>
+                <br><br>
+                <hr>
+                <br><br>
+                <label>Any Special Requests or Inquiries?</label>
+                <br><br>
+                <textarea cols="30" rows="4"></textarea>
+                <br><br>
+                <label>I have read and agree to the Terms of Use</label>
+                <input type="checkbox" name="terms" id="agreetoterms" id="agreetoterms" required>
+                <br> <br> <br>
+                <input id="book_button" class="book_button" type="submit" value="Book The Service!">
+            </form>
+          </div>
+        </div>
+
+
+        <!--  Sitemap  -->
+
+        <footer class="sitemap">
+          <div class="sitemap_div_1">
+              <ul>
+                  <li class="sitemap_element"><h3>Navigate</h3></li><br>
+                  <li class="sitemap_element"><a href="index.html">Home</a></li><br>
+                  <li class="sitemap_element"><a href="sign_in.html">Sign In</a></li><br>
+                  <li class="sitemap_element"><a href="book.html">Book a Service</a></li><br>
+                  <li class="sitemap_element"><a href="workspaces_academy.html">WorkSpaces Academy</a></li><br>
+              </ul>
+          </div>
+  
+          <div class="sitemap_div_2">
+              <ul>
+                  <li class="sitemap_element"><h3>Get to Know Us</h3></li><br>
+                  <li class="sitemap_element"><a href="about_us.html">About Us</a></li><br>
+                  <li class="sitemap_element"><a href="our_services.html">Our Services</a></li><br>
+                  <li class="sitemap_element"><a href="our_partners.html">Our Partners</a></li><br>
+                  <li class="sitemap_element"><a href="upcoming_events.html">News/Upcoming Events</a></li><br>
+              </ul>
+          </div>
+
+          <div class="sitemap_div_3">
+          <div>
+              <form>
+              <label></label> <span class="sitemap_title"><b>Contact Us</b></span><br><br>
+              <input class="text_input" type="text" name="newsletter" placeholder="Email" required><br>
+              <br>
+              <textarea placeholder="What would you like to know?" class="textarea_style" required></textarea>
+              <input class="submit_input" type="submit" name="subscribe" value="Send">
+              </form>
+          </div>
+          </div>
+      </footer>
+
+
+      <!--  Back to top button, navbar and customer quote calculation scripts  -->
+
+      <script src="JavaScript/book.js"></script>
+      <script type="text/javascript" src="JavaScript/back_to_top.js"></script>
+      <script type="text/javascript" src="JavaScript/navbar.js"></script>
+      
+    </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content = "WorkSpaces, About Workspaces, WorkSpaces Servvices, WorkSpaces Founder,  
+    Offices, Coworking Spaces, Meeting Rooms, Community for Professionals">
+    <meta name="description" content = "WorkSpaces Home Page">
+    <title>WorkSpaces Homepage</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <!--<link rel="stylesheet" type="text/css" href="CSS/navbar.css">-->
+    <link rel="stylesheet" type="text/css" href="CSS/newsletter_sitemap.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index_navbar.css">
+  </head>
+  <body>
+
+    <!--  Navigation Bar  -->
+
+    <header>
+      <nav class="navbar">
+          <div class="navdiv">
+              <div><a href="index.html"><img class="logo" src="Media/logo.png" alt="Business Logo"></a></div>
+              <ul>
+                  <li class="navbar_element"><a href="index.html">Home</a></li>
+                  <li class="navbar_element"><a href="our_services.html">Our Services</a></li>
+                  <li class="navbar_element"><a href="workspaces_academy.html">WorkSpaces Academy</a></li>
+                  <li class="navbar_element"><a href="book.html">Book</a></li>
+                  <li class="navbar_element"><a href="about_us.html">About Us</a></li>
+                  <li class="navbar_element"><a href="sign_in.html">Sign In</a></li>
+                  <li class="dropdown">
+                    <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">&#9776;</a>
+                    <div class="dropdown-content">
+                        <a class="navbar_element" href="index.html">Home</a>
+                        <a class="navbar_element" href="our_services.html">Our Services</a>
+                        <a class="navbar_element" href="workspaces_academy.html">WorkSpaces Academy</a>
+                        <a class="navbar_element" href="book.html">Book</a>
+                        <a class="navbar_element" href="about_us.html">About Us</a>
+                        <a class="navbar_element" href="sign_in.html">Sign In</a>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+  
+
+    <!--  Background Image  -->
+    <div class="background_image"> </div>
+
+
+    <!--  Elevator Pitch of the business  -->
+    <div>
+      <fieldset class="summary">
+          <legend><span class="head">Dream. Deliver!</span></legend>
+          <span class="txt">WorkSpaces is your premier destination for flexible office solutions, coworking spaces and meeting rooms.
+              We connects businesses, freelancers, and entrepreneurs with a diverse range of workspaces tailored to meet your professional needs.</span>
+      </fieldset> 
+    </div>
+
+
+    <!--  Back To Top Button  -->
+    <div class="back-to-top" id="backToTop">
+      <img src="Media/arrow.png" alt="Back to Top">
+    </div>
+
+
+    <!--  Brief explanation of the services offered by the business  -->
+
+    <h1 class="services"><a href="our_services.html">Our Services</a></h1>
+    <div class="services_div">
+      <div class="service_div">
+        <h1 class="services_titles">Meeting Rooms</h1>
+        <p>Elevate your professional gatherings with our state-of-the-art meeting rooms designed to inspire creativity and enhance productivity. 
+          Our meeting spaces are well equipped to accommodate various meeting formats.</p>
+      </div>
+      <div class="service_div">
+        <h1 class="services_titles">Co-Work Spaces</h1>
+        <p>Designed to empower your workday and cultivate a thriving professional community, 
+          our coworking spaces are thoughtfully curated to foster collaboration, creativity, and flexibility.
+        </p>
+      </div>
+      <div class="service_div">
+        <h1 class="services_titles">Private Offices</h1>
+        <p>Delicately crafted with meticulous attention to detail, our private offices 
+          are thoughtfully designed to provide a dedicated and secure space for your team to truly flourish.
+        </p>
+      </div>
+    </div>
+
+
+    <!--  Slider of some of the spaces offered by the business  -->
+
+    <div id="slider_div">
+      
+      <div id="slider">
+        <div class="slide"><img class="imgSize" src="Media/meeting_room.jpg" alt="Slide 1"></div>
+        <div class="slide"><img class="imgSize" src="Media/coworking_space.jpg" alt="Slide 2"></div>
+        <div class="slide"><img class="imgSize" src="Media/office.jpg" alt="Slide 3"></div>
+      </div>
+      
+    </div>
+    <div id="prev" onclick="prevSlide()">&#9665;</div>
+    <div id="next" onclick="nextSlide()">&#9655;</div>
+    
+
+    <!--  Customer Testimonials  -->
+
+    <h1 class="testimonials">Testimonials</h1>
+  
+    <div class="testimonial_container">
+  
+      <div class="testimonial_item">
+        <img class="testimonial_photo" src="Media/small_business_owner.jpg" alt="testimonial of customer 1">
+        <div class="testimonial_text">
+          <p>"Love the private offices at WorkSpaces! Sleek, professional, and perfect for client meetings. Highly recommended!"</p>
+          <p class="testimonial_customer_name">Sara L. - Small Business Owner</p>
+        </div>
+      </div>
+  
+      <div class="testimonial_item">
+        <img class="testimonial_photo" src="Media/freelancer.jpg" alt="testimonial of customer 2">
+        <div class="testimonial_text">
+          <p>"WorkSpaces' coworking spaces are ideal for freelancers. Vibrant atmosphere, flexible workspaces, and lightning-fast Wi-Fi. A freelancer's dream!"</p>
+          <p class="testimonial_customer_name">Chris B. - Freelancer</p>
+        </div>
+      </div>
+  
+      <div class="testimonial_item">
+        <img class="testimonial_photo" src="Media/entrepreneur.jpg" alt="testimonial of customer 4">
+        <div class="testimonial_text">
+          <p>"Found my focus at WorkSpaces' private offices. Smart design, secure space. Proximity to a dynamic community is a game-changer. A key part of our success!"</p>
+          <p class="testimonial_customer_name">Taylor H. - Entrepreneur</p>
+        </div>
+      </div>
+  
+      <div class="testimonial_item">
+        <img class="testimonial_photo" src="Media/event_coordinator.jpg" alt="testimonial of customer 3">
+        <div class="testimonial_text">
+          <p>"Hosted a flawless event at WorkSpaces. Meeting rooms with top-notch AV, flexible seating. Clients were impressed; we'll be back!"</p>
+          <p class="testimonial_customer_name">Alex P. - Event Coordinator</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--  Sitemap  -->
+
+    <footer class="sitemap">
+      <div class="sitemap_div_1">
+        <ul>
+          <li class="sitemap_element"><h3>Navigate</h3></li><br>
+          <li class="sitemap_element"><a href="index.html">Home</a></li><br>
+          <li class="sitemap_element"><a href="sign_in.html">Sign In</a></li><br>
+          <li class="sitemap_element"><a href="book.html">Book a Service</a></li><br>
+          <li class="sitemap_element"><a href="workspaces_academy.html">WorkSpaces Academy</a></li><br>
+        </ul>
+      </div>
+
+      <div class="sitemap_div_2">
+        <ul>
+          <li class="sitemap_element"><h3>Get to Know Us</h3></li><br>
+          <li class="sitemap_element"><a href="about_us.html">About Us</a></li><br>
+          <li class="sitemap_element"><a href="our_services.html">Our Services</a></li><br>
+          <li class="sitemap_element"><a href="our_partners.html">Our Partners</a></li><br>
+          <li class="sitemap_element"><a href="upcoming_events.html">News/Upcoming Events</a></li><br>
+        </ul>
+      </div>
+
+      <div class="sitemap_div_3">
+        <form>
+          <label><span class="newsletter_title"><b>Stay Connected</b></span></label><br>
+          <p class="newsletter_text">Stay Informed! Join our Newletter for news, special offers and upcoming events! </p>
+          <input type="text" name="newsletter" placeholder="Email" required>
+          <input type="submit" name="subscribe" value="Subscribe">
+        </form>
+      </div>
+      
+    </footer>
+        
+
+    <!--  Back to top button, navbar and slider scripts  -->
+
+    <script type="text/javascript" src="JavaScript/navbar.js"></script>
+    <script type="text/javascript" src="JavaScript/slider.js"></script>
+    <script type="text/javascript" src="JavaScript/back_to_top.js"></script>
+    
+    </body>
+</html>
